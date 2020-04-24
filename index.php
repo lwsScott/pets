@@ -14,11 +14,11 @@ $f3 = Base::instance();
 //when user visits the default root(file) - ...328/hello
 //it runs the function
 $f3->route('GET /', function(){
-    echo '<h1>Pet Home</h1>';
+    //echo '<h1>Pet Home</h1>';
 
     //display a page called home.html
-    //$view = new Template();
-    //echo $view->render('home.html');
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 //run fat free
